@@ -3,7 +3,7 @@ import File = require('vinyl');
 import * as globStream from 'glob-stream';
 import * as through from 'through2';
 
-interface SrcOptions extends globStream.Options {
+interface SrcOptions extends globStream.Options, through.Options {
 
     /** Specifies the working directory the folder is relative to */
     cwd?: string;
